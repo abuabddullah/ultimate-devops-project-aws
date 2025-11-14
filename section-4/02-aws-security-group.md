@@ -14,9 +14,9 @@
 
 ### **Step 3: Add a New Inbound Rule**
 - Click **Add Rule**
-- Select **Type** (Choose a predefined rule like HTTP, SSH, or Custom)
+- Select **Type** (Choose a predefined rule like HTTP, SSH, or Custom) : **All Trafic**
 - Select **Protocol** (Automatically populated based on Type)
-- Enter **Port Range** (e.g., `80` for HTTP, `22` for SSH, `8080` for custom apps)
+- Enter **Port Range** (e.g., `80` for HTTP, `22` for SSH, `8080` for custom apps) : **Anywher IPv4**
 - Select **Source**:
   - `My IP` (restrict access to your IP)
   - `Custom` (specify a range like `192.168.1.0/24`)
