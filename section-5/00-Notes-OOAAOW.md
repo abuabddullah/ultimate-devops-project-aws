@@ -90,3 +90,7 @@ COPY --from=builder /go/build/product-catalog ./
 EXPOSE ${PRODUCT_CATALOG_PORT}
 ENTRYPOINT [ "./product-catalog" ]
 ```
+2. build the image
+   ```
+   docker build -t abuabddullah/product-catalog:v1
+   ```
