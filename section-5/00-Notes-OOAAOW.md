@@ -18,7 +18,7 @@
    go build -o product-catalog . 
    ```
 8. terminal out put
-   ```
+```
 ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ ll
 total 28748
 drwxrwxr-x  4 ubuntu ubuntu     4096 Nov 15 01:01 ./
@@ -50,4 +50,4 @@ ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ ./pr
 INFO[0000] Loaded 10 products                           
 INFO[0000] Product Catalog gRPC server started on port: 8088 
 
-   ```
+```
