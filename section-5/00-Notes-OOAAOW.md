@@ -7,5 +7,5 @@
    ```
    go --version
    ```
-3. clone the repo [https://github.com/abuabddullah/ultimate-devops-project-demo.git]:(https://github.com/abuabddullah/ultimate-devops-project-demo.git)
+3. clone the repo [https://github.com/abuabddullah/ultimate-devops-project-demo.git](https://github.com/abuabddullah/ultimate-devops-project-demo.git)
 4. go to **src/product-catalog/README.md** folder of **ultimate-devops-project-demo** project
