@@ -9,7 +9,12 @@
    ```
 3. clone the repo [https://github.com/abuabddullah/ultimate-devops-project-demo.git](https://github.com/abuabddullah/ultimate-devops-project-demo.git)
 4. go to **src/product-catalog/README.md** folder of **ultimate-devops-project-demo** project
-5. build the prject
+5. set the env
    ```
-   go build -o product-catalog .
+   export PRODUCT_CATALOG_PORT=8088
    ```
+7. build the prject
+   ```
+   go build -o product-catalog . 
+   ```
+8. 
