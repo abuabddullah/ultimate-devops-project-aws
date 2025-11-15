@@ -85,16 +85,23 @@ WORKDIR /usr/src/app/
 COPY ./products/ ./products/
 COPY --from=builder /usr/src/app/product-catalog/ ./
 
-# ENV PRODUCT_CATALOG_PORT=8088
-EXPOSE ${PRODUCT_CATALOG_PORT}
+ENV PRODUCT_CATALOG_PORT=8088
 ENTRYPOINT [ "./product-catalog" ]
 
 ```
 2. build the image
    ```
-   docker build -t abuabddullah/product-catalog:v1 .
+   docker build -t abuabddullah/product-catalog:v2 .
    ```
 3. check the images
    ```
    docker images | grep abuabddullah
    ```
+4. run[test] container for the images created now
+   ```
+   docker run abuabddullah/product-catalog:v2
+   ```
+   - output
+   - ```
+     4444
+     ```
