@@ -92,5 +92,5 @@ ENTRYPOINT [ "./product-catalog" ]
 ```
 2. build the image
    ```
-   docker build -t abuabddullah/product-catalog:v1
+   docker build -t abuabddullah/product-catalog:v1 .
    ```
