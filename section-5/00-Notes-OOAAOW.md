@@ -102,6 +102,11 @@ ENTRYPOINT [ "./product-catalog" ]
    docker run abuabddullah/product-catalog:v2
    ```
    - output
-   - ```
-     4444
-     ```
+```
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ docker images | grep abuabddullah
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+abuabddullah/product-catalog…   86580fcd7319       56.2MB           18MB        
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ docker run abuabddullah/product-catalog:v2
+time="2025-11-15T02:17:04Z" level=info msg="Loaded 10 products"
+time="2025-11-15T02:17:04Z" level=info msg="Product Catalog gRPC server started on port: 8088"
+```
