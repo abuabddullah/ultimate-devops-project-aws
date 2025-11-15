@@ -13,7 +13,7 @@
    ```
    export PRODUCT_CATALOG_PORT=8088
    ```
-7. build the prject
+7. build the prject *[go.mod টাই হচ্ছে package.json এর মত কাজ করে]*
    ```
    go build -o product-catalog . 
    ```
