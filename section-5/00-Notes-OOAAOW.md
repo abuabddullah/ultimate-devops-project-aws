@@ -17,4 +17,37 @@
    ```
    go build -o product-catalog . 
    ```
-8. 
+8. terminal out put
+   ```
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ ll
+total 28748
+drwxrwxr-x  4 ubuntu ubuntu     4096 Nov 15 01:01 ./
+drwxrwxr-x 28 ubuntu ubuntu     4096 Nov 14 14:12 ../
+-rw-rw-r--  1 ubuntu ubuntu      606 Nov 14 12:49 Dockerfile
+-rw-rw-r--  1 ubuntu ubuntu      670 Nov 14 12:49 README.md
+drwxrwxr-x  3 ubuntu ubuntu     4096 Nov 14 12:49 genproto/
+-rw-rw-r--  1 ubuntu ubuntu     3815 Nov 14 12:49 go.mod
+-rw-rw-r--  1 ubuntu ubuntu    21347 Nov 14 12:49 go.sum
+-rw-rw-r--  1 ubuntu ubuntu     8741 Nov 14 12:49 main.go
+drwxrwxr-x  2 ubuntu ubuntu     4096 Nov 14 12:49 products/
+-rw-rw-r--  1 ubuntu ubuntu      518 Nov 14 12:49 tools.go
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ export PRODUCT_CATALOG_PORT=8088
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ go build -o product-catalog .
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ ll
+total 28748
+drwxrwxr-x  4 ubuntu ubuntu     4096 Nov 15 01:01 ./
+drwxrwxr-x 28 ubuntu ubuntu     4096 Nov 14 14:12 ../
+-rw-rw-r--  1 ubuntu ubuntu      606 Nov 14 12:49 Dockerfile
+-rw-rw-r--  1 ubuntu ubuntu      670 Nov 14 12:49 README.md
+drwxrwxr-x  3 ubuntu ubuntu     4096 Nov 14 12:49 genproto/
+-rw-rw-r--  1 ubuntu ubuntu     3815 Nov 14 12:49 go.mod
+-rw-rw-r--  1 ubuntu ubuntu    21347 Nov 14 12:49 go.sum
+-rw-rw-r--  1 ubuntu ubuntu     8741 Nov 14 12:49 main.go
+-rwxrwxr-x  1 ubuntu ubuntu 29366641 Nov 15 01:01 product-catalog*
+drwxrwxr-x  2 ubuntu ubuntu     4096 Nov 14 12:49 products/
+-rw-rw-r--  1 ubuntu ubuntu      518 Nov 14 12:49 tools.go
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ ./product-catalog 
+INFO[0000] Loaded 10 products                           
+INFO[0000] Product Catalog gRPC server started on port: 8088 
+
+   ```
