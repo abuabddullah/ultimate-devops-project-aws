@@ -55,6 +55,7 @@ INFO[0000] Product Catalog gRPC server started on port: 8088
 # Dockerize the go-project
 1. create a **Dockerfile** at **src/product-catalog/Dockerfile**
 ```
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /usr/src/app/
@@ -63,8 +64,6 @@ WORKDIR /usr/src/app/
 RUN --mount=type=cache,target=/go/pkg/mod \
     --mount=type=cache,target=/root/.cache/go-build \
     mkdir -p /root/.cache/go-build
-
-
 
 # Copy
 COPY go.mod go.sum ./
@@ -75,7 +74,7 @@ RUN go mod download
 # Copy the rest of the source code
 COPY . .
 
-RUN go build -o /go/build/product-catalog ./
+RUN go build -o product-catalog .
 
 ####################################
 
@@ -84,11 +83,12 @@ FROM alpine AS release
 WORKDIR /usr/src/app/
 
 COPY ./products/ ./products/
-COPY --from=builder /go/build/product-catalog ./
+COPY --from=builder /usr/src/app/product-catalog/ ./
 
 # ENV PRODUCT_CATALOG_PORT=8088
 EXPOSE ${PRODUCT_CATALOG_PORT}
 ENTRYPOINT [ "./product-catalog" ]
+
 ```
 2. build the image
    ```
