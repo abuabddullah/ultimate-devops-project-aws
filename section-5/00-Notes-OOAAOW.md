@@ -54,8 +54,8 @@ INFO[0000] Product Catalog gRPC server started on port: 8088
 
 # Dockerize the go-project
 1. create a **Dockerfile** at **src/product-catalog/Dockerfile**
-   ```
-   FROM golang:1.22-alpine AS builder
+```
+FROM golang:1.22-alpine AS builder
 
 WORKDIR /usr/src/app/
 
@@ -83,4 +83,4 @@ COPY --from=builder /go/build/product-catalog ./
 # ENV PRODUCT_CATALOG_PORT=8088
 EXPOSE ${PRODUCT_CATALOG_PORT}
 ENTRYPOINT [ "./product-catalog" ]
-   ```
+```
