@@ -94,3 +94,7 @@ ENTRYPOINT [ "./product-catalog" ]
    ```
    docker build -t abuabddullah/product-catalog:v1 .
    ```
+3. check the images
+   ```
+   docker images | grep abuabddullah
+   ```
