@@ -101,7 +101,7 @@ ENTRYPOINT [ "./product-catalog" ]
    ```
    docker run abuabddullah/product-catalog:v2
    ```
-   - output
+output
 ```
 ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/product-catalog$ docker images | grep abuabddullah
 WARNING: This output is designed for human readability. For machine-readable output, please use --format.
