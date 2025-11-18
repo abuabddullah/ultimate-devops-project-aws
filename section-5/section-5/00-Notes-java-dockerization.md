@@ -60,3 +60,9 @@ output
 ```
 -rwxr-xr-x 1 ubuntu ubuntu 11498 Nov 18 00:31 ./build/install/opentelemetry-demo-ad/bin/Ad
 ```
+### export the ports
+```
+export AD_PORT=9099
+export FEATURE_FLAG_GRPC_SERVICE_ADDR=featureflagservice:50053
+./build/install/opentelemetry-demo-ad/bin/Ad
+```
