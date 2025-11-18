@@ -66,3 +66,15 @@ export AD_PORT=9099
 export FEATURE_FLAG_GRPC_SERVICE_ADDR=featureflagservice:50053
 ./build/install/opentelemetry-demo-ad/bin/Ad
 ```
+_output_
+```
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/ad$ export AD_PORT=9099
+
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/ad$ export FEATURE_FLAG_GRPC_SERVICE_ADDR=featureflagservice:50053
+ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/ad$ ./build/install/opentelemetry-demo-ad/bin/Ad
+2025-11-18 00:39:11 - oteldemo.AdService - Ad service starting. trace_id= span_id= trace_flags= 
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+2025-11-18 00:39:11 - oteldemo.AdService - Ad service started, listening on 9099 trace_id= span_id= trace_flags=
+```
