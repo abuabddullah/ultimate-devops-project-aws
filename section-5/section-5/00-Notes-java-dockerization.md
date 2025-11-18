@@ -28,3 +28,18 @@ Welcome to Gradle 8.9.
 BUILD SUCCESSFUL in 2s
 1 actionable task: 1 executed
 ```
+
+
+
+
+
+### build the prject [./gradlew টাই হচ্ছে package.json এর মত কাজ করে]
+```
+./gradlew installDist
+
+```
+or
+```
+./gradlew installDist -PprotoSourceDir=./proto
+```
+
