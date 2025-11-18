@@ -25,5 +25,5 @@
 
 ### **Step 4: Verify the Changes**
 - Ensure the rule appears in the **Inbound Rules** list
-- Test connectivity by accessing the instance on the exposed port <a href="http://52.55.186.66:8080/" target="_blank">http://52.55.186.66:8080/</a>
+- Test connectivity by accessing the instance on the exposed port <a href="http://174.129.115.26:8080/" target="_blank">http://174.129.115.26:8080/</a>
 
