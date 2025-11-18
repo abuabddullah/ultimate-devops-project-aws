@@ -1,12 +1,11 @@
-# Install and Build Go for *src/ad/README.md*
-## install java
+# install java
 ```
 sudo apt install openjdk-21-jre-headless
 ```
 ```
 java --version
 ```
-# Dockerization of java file
+# Build Go for *src/ad/README.md*
 - goto to the **Ad** service **_ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/ad$_**
 
 ### grant the permission for the wraper file
@@ -78,3 +77,5 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 2025-11-18 00:39:11 - oteldemo.AdService - Ad service started, listening on 9099 trace_id= span_id= trace_flags=
 ```
+
+# Dockerization of java project
