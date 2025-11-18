@@ -1,10 +1,10 @@
-# check java is installed or not
-```
-java --version
-```
+# Install and Build Go for *src/ad/README.md*
 ## install java
 ```
 sudo apt install openjdk-21-jre-headless
+```
+```
+java --version
 ```
 # Dockerization of java file
 - goto to the **Ad** service **_ubuntu@ip-172-31-27-215:~/ultimate-devops-project-demo/src/ad$_**
@@ -28,11 +28,6 @@ Welcome to Gradle 8.9.
 BUILD SUCCESSFUL in 2s
 1 actionable task: 1 executed
 ```
-
-
-
-
-
 ### build the prject [./gradlew টাই হচ্ছে package.json এর মত কাজ করে]
 ```
 ./gradlew installDist
